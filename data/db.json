@@ -52,14 +52,26 @@
       "SkillsRequired": [
         "HTML",
         "CSS",
-        "JavaScript"
+        "JavaScript",
+        "API"
       ],
-      "complete": true
+      "complete": false
     },
     {
       "id": 6,
       "title": "Build a JavaScript Quiz",
       "details": "When you first start learning JavaScript, figuring out how to put what you’ve learned into practice and choosing a project that fits within your skillset might be difficult. Building a little quiz game is a great place to start. You’ll have to deal with highly abstract logic, and it’ll be up to you to control and/or expand the range of quiz difficulty. Begin by creating a simple game with four multiple-choice questions. While making these questions up, assign correct answers to each of them. You’ll learn a lot about data management and creating a scoring system while programming.",
+      "SkillsRequired": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "complete": false
+    },
+    {
+      "id": 7,
+      "title": "JavaScript Music Player",
+      "details": "For Front-End Web Development, creating a JavaScript Music Player can be a feasible choice. Everyone should focus on expanding the application’s functionality as a new JavaScript developer, but design and user-experience decisions become more difficult to make without fundamental graphics and architecture in place. So, here’s the architecture, which is divided into three thematic buckets: CSS (adding styling to each element defined in the HTML file) JavaScript (adding elements for audio, player buttons, and music information) (adding functionality when HTML elements are clicked). Advanced Javascript-Self Paced will help you to grab advanced functions of JavaScript.",
       "SkillsRequired": [
         "HTML",
         "CSS",

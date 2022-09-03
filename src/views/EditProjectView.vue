@@ -24,7 +24,7 @@
       >
     </div>
     <div class="submit">
-      <button>Add Project</button>
+      <button>Update Project</button>
     </div>
   </form>
 </template>
@@ -32,12 +32,16 @@
 <script>
 import axios from "axios";
 export default {
+    props:['id'],
   data() {
     return {
-      title: "",
-      details: "",
+      id: this.$route.params.id,
+      title: '',
+      details: '',
       tempSkills: [],
       skills: [],
+      complete: '',
+      uri: 'http://localhost:3000/projects/'+ this.id
     };
   },
   methods: {
@@ -61,19 +65,28 @@ export default {
     },
     handelSubmit() {
       axios
-        .post("http://localhost:3000/projects", {
-        id: '',
+        .patch("http://localhost:3000/projects/" + this.$route.params.id, {
           title: this.title,
           details: this.details,
           SkillsRequired: this.skills,
           complete: false,
         })
         .then(() => {
-          this.$router.push('/');
+          this.$router.push("/");
         })
         .catch((err) => console.log(err.message));
     },
   },
+  mounted(){
+    axios.get(this.uri)
+    .then(res => {
+        this.title = res.data.title;
+        this.details = res.data.details;
+        this.skills = res.data.SkillsRequired;
+
+    })
+    .catch(err => console.log(err.message))
+  }
 };
 </script>
 

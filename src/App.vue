@@ -25,11 +25,11 @@ nav {
 nav a {
   margin: 10px 40px;
   text-decoration: none;
-  color: #777;
-  font-size: 24px;
-  opacity: 0.5;
+  color: #999;
+  font-size: 18px;
 }
-nav a:active{
+a.router-link-active{
   border-bottom: 4px solid #00ce89;
+  padding-bottom: 4px;
 }
 </style>

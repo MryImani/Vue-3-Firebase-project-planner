@@ -4,7 +4,9 @@
       <h3 @click="toggleDetail">{{ project.title }}</h3>
       <div class="icons">
         <span @click="deleteProject" class="material-icons">delete</span>
-        <span @click="" class="material-icons">edit</span>
+        <router-link :to="{name : 'edit-project' , params : {id: project.id}}">
+          <span @click="editProject" class="material-icons">edit</span>
+        </router-link>
         <span @click="toggleComplete" class="material-icons tick">done</span>
       </div>
     </div>
@@ -52,6 +54,9 @@ export default {
         })
         .catch((err) => console.log(err.message));
     },
+    editProject(){
+      this.$router.push({name : 'edit-project' , params : {id: this.project.id , title : this.project.title, details : this.project.details, SkillsRequired : this.project.SkillsRequired , complete : this.project.complete}});
+    }
   },
 };
 </script>
