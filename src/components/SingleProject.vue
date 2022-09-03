@@ -2,6 +2,11 @@
   <div class="project">
     <div class="actions">
       <h3 @click="toggleDetail">{{ project.title }}</h3>
+      <div class="icons">
+        <span class="material-icons">delete</span>
+        <span class="material-icons">edit</span>
+        <span class="material-icons">done</span>
+      </div>
     </div>
     <div class="details" v-if="showDetails">
       <p>{{ project.details }}</p>
@@ -12,16 +17,16 @@
 <script>
 export default {
   props: ["project"],
-  data (){
-    return{
-      showDetails : false
-    }
+  data() {
+    return {
+      showDetails: false,
+    };
   },
-  methods:{
-   toggleDetail(){
-    this.showDetails = !this.showDetails
-   }
-  }
+  methods: {
+    toggleDetail() {
+      this.showDetails = !this.showDetails;
+    },
+  },
 };
 </script>
 
@@ -36,5 +41,19 @@ export default {
 }
 h3 {
   cursor: pointer;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.material-icons{
+    font-size: 24px;
+    margin-left: 10px;
+    color: #bbb;
+    cursor: pointer;
+}
+.material-icons:hover{
+    color: #777;
 }
 </style>
