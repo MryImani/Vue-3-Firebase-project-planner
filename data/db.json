@@ -31,7 +31,7 @@
         "React",
         "Vue"
       ],
-      "complete": false
+      "complete": true
     },
     {
       "id": 4,
@@ -43,12 +43,23 @@
         "JavaScript",
         "Bootstrap"
       ],
-      "complete": true
+      "complete": false
     },
     {
       "id": 5,
       "title": "Build a Weather App",
       "details": "A weather application can be created with HTML, CSS, and JavaScript. You may use the Open Weather Map API to add weather information. In this project, you may also use AngularJS. To make your website look nice, you can use design-oriented libraries. The Open Weather Map API will provide you with the essential weather information for various locations, and it will be your job to present that information in a pleasant manner. After completing this project, you’ll be familiar with various JS, Angular, and AJAX components. Also, you can use the two building blocks HTML and CSS, by going through Top 10 Projects For Beginners To Practice HTML and CSS Skills and create some amazing applications. ",
+      "SkillsRequired": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "complete": true
+    },
+    {
+      "id": 6,
+      "title": "Build a JavaScript Quiz",
+      "details": "When you first start learning JavaScript, figuring out how to put what you’ve learned into practice and choosing a project that fits within your skillset might be difficult. Building a little quiz game is a great place to start. You’ll have to deal with highly abstract logic, and it’ll be up to you to control and/or expand the range of quiz difficulty. Begin by creating a simple game with four multiple-choice questions. While making these questions up, assign correct answers to each of them. You’ll learn a lot about data management and creating a scoring system while programming.",
       "SkillsRequired": [
         "HTML",
         "CSS",
