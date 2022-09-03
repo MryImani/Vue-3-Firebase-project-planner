@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <div v-if="projects.length">
-      <div class="project" v-for="project in projects" :key="project.id">
-        <p>{{project.title}}</p>
+      <div  v-for="project in projects" :key="project.id">
+        <SingleProject :project="project" />
       </div>
     </div>
   </div>
@@ -10,13 +10,15 @@
 
 <script>
 import axios from 'axios'
+import SingleProject from '../components/SingleProject.vue'
 export default {
   name: 'HomeView',
   components: {
+    SingleProject
   },
   data(){
     return {
-      projects : [],
+      projects : []
     }
   },
   mounted(){
